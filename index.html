@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    .body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        height: 280px;
+        width: 160px;
+        display: grid;
+        grid-template-columns: 20px 20px 20px 50px 30px;
+        grid-template-rows: 30px 60px 60px 30px 30px 20px 20px;
+        gap: 5px;
+        border: 15px solid black;
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    .item {
+        background-color: white;
+    }
+    .white1{
+        grid-column: span 2;
+    }
+    .white2 {
+        grid-column: span 2;
+    }
+    .yellow1 {
+        background-color: yellow;
+    }
+    .red {
+        background-color: red;
+        grid-area: 2 / 2 / 4 / 5;
+    }
+    .yellow2 {
+        background-color: yellow;
+    }
+    .white4 {
+        grid-row: span 2;
+    }
+    .black1 {
+        background-color: black;
+        grid-area: 4 / 2 / 6 / 4;
+    }
+    .black2 {
+        background-color: black;
+        grid-area: 6 / 4 / 7 / 5 ;
+    }
+    .blue {
+        background-color: blue;
+        grid-area: 5 / 5 / 7 / 6;
+    }
+    .yellow3 {
+        background-color: yellow;
+        grid-area: 5 / 1 / 8 / 2;
+    }
+    .white9 {
+        grid-area: 6/2/8/4;
+    }
+    .white10 {
+        grid-area: 7/4/8/6;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item white1"></div>
+        <div class="item white2"></div>
+        <div class="item yellow1"></div>
+        <div class="item white3"></div>
+        <div class="item red"></div>
+        <div class="item yellow2"></div>
+        <div class="item white4"></div>
+        <div class="item white5"></div>
+        <div class="item yellow3"></div>
+        <div class="item black1"></div>
+        <div class="item white6"></div>
+        <div class="item white7"></div>
+        <div class="item white8"></div>
+        <div class="item blue"></div>
+        <div class="item white9"></div>
+        <div class="item black2"></div>
+        <div class="item white10"></div>
+    </div>
+</body>
+</html>
